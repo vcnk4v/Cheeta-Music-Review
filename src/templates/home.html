@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/navbarr.css" />
+  <link rel="stylesheet" href="../static/footer.css" />
+  <link rel="stylesheet" href="../static/home.css" />
+  <title>Home</title>
+  
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="current" href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+    </a>
+    <a href="final_artists.html">Artists</a>
+    <a href="about2.html">About</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+  </div>
+  
+
+  <div class="bg">
+    <div class="container0">
+
+      <div style="float: left;">
+        <img class="logo" src="../static/images/logo.jpg">
+      </div>
+      <p>
+      <h1>Home Page</h1>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+
+      <div class="box1">
+        <p>
+        <div class="title">Top Artists</div>
+        <div class="subtitle">
+          <hr style="width:50%;align-self:center">
+          Discover this year's most highly rated Artists on Cheeta
+          <hr style="width:70%;align-self:center">
+        </div>
+        </p>
+
+        <div class="content">
+          <div class="grid">
+            <figure class="effect-ming effect-ming1">
+              <img src="../static/images/3.jpg" class="artistimg" />
+              <figcaption>
+                <a href="albums_ts.html">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="grid">
+            <figure class="effect-ming effect-ming1">
+              <img src="../static/images/2.jpg" class="artistimg" />
+              <figcaption>
+                <a href="albums_ldr.html">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="grid">
+            <figure class="effect-ming effect-ming1">
+              <img src="../static/images/1.jpg" class="artistimg" />
+              <figcaption>
+                <a href="albums_id.html">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="line">
+      <hr style="width:100%;align-self:center" size="10%">
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container2">
+      <div class="card">
+
+        <div class="box1">
+          <p>
+          <div class="title">Top Songs</div>
+          <div class="subtitle">
+            <hr style="width:50%;align-self:center">
+            Discover this year's most highly rated Songs on Cheeta
+            <hr style="width:70%;align-self:center">
+          </div>
+          </p>
+
+          <div class="content">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="../static/images/4.jpg" class="artistimg" />
+               
+              </figure>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="../static/images/5.jpg" class="artistimg" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="../static/images/6.jpg" class="artistimg" />
+               
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="line">
+        <hr style="width:100%;align-self:center" size="10%">
+      </div>
+      <br>
+      <br>
+
+      <div class="container3">
+        <div class="card">
+
+          <div class="box1">
+            <p>
+            <div class="title">Top Albums</div>
+            <div class="subtitle">
+              <hr style="width:50%; align-self:center">
+              Discover this year's most highly rated Albums on Cheeta
+              <hr style="width:70%;align-self:center">
+            </div>
+            </p>
+
+            <div class="content">
+              <div class="grid">
+                <figure class="effect-ming effect-ming1">
+                  <img src="../static/images/7.jpg" class="artistimg" />
+                  <figcaption>
+                    <a href="{{ url_for('songs_nv') }}">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="grid">
+                <figure class="effect-ming effect-ming1">
+                  <img src="../static/images/9.jpg" class="artistimg" />
+                  <figcaption>
+                    <a href="{{ url_for('song_bleeding') }}">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="grid">
+                <figure class="effect-ming effect-ming1">
+                  <img src="../static/images/8.jpg" class="artistimg" />
+                  <figcaption>
+                    <a href="{{ url_for('songs_midnight') }}">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+
+            <br>
+            <br>
+            <div class="line">
+              <hr style="width:100%;align-self:center"">
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+        </div>
+        </div>
+        <footer class="foot">
+          <div class="f_split">
+            <div class="lft">
+              <img class="f_logo" src="../static/images/logo.jpg" />
+            </div>
+            <div class="mid">
+              <p>
+                Your ultimate destination for expert music reviews and
+                recommendations.
+              </p>
+            </div>
+            <div class="rt">
+              <div class="abt_links">
+                <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+                <a href="home.html">Home</a>
+              </div>
+            </div>
+          </div>
+    
+          <hr
+            style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+          />
+          <p>Follow us</p>
+          <div class="socials">
+            <a href="https://www.pinterest.com/pin/240590805064809827/">
+              <img
+                src="../static/images/insta-removebg-preview (copy).png"
+                style="width: 50px"
+                class="grid_im"
+              />
+            </a>
+            <a
+              href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+            >
+              <img
+                src="../static/images/insta-removebg-preview (3rd copy).png"
+                style="width: 50px"
+                class="grid_im"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+            >
+              <img
+                src="../static/images/insta-removebg-preview.png"
+                style="width: 50px"
+                class="grid_im"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+              ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+            /></a>
+          </div>
+          <div class="copyright">© Cheeta. All rights reserved.</div>
+        </footer>
+        <script src="../static/navbar.js"></script>
+</body>
+
+</html>

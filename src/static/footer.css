@@ -1,0 +1,132 @@
+.f_logo {
+  width: 30%;
+  height: auto;
+  margin-top: 6%;
+  border-radius: 8%;
+  opacity: 0.9;
+  margin-left: 40%;
+  margin-bottom: 6%;
+}
+.foot {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(253, 238, 205);
+  align-content: center;
+}
+.foot p {
+  color: rgb(126, 65, 9);
+  text-align: center;
+}
+.copyright {
+  text-align: right;
+  color: rgb(126, 65, 9);
+  padding-bottom: 0.7%;
+  margin-right: 8%;
+}
+.socials {
+  margin-left: 40%;
+  display: grid;
+  width: 20%;
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+}
+.grid_im:hover {
+  cursor: pointer;
+  filter: saturate(10);
+}
+.foot a {
+  color: rgb(142, 84, 33);
+  font-size: 20px;
+  text-decoration: none;
+}
+.foot a:hover {
+  color: #290e01;
+}
+.f_split {
+  display: flex;
+}
+.rt {
+  width: 33.33%;
+}
+.mid {
+  width: 33.33%;
+  right: 0;
+}
+.mid p {
+  padding-top: 8%;
+  font-family: cursive;
+  font-size: 30px;
+  padding-right: 10%;
+  padding-left: 10%;
+  color: rgb(135, 71, 54);
+}
+.lft {
+  width: 33.33%;
+}
+.abt_links {
+  text-align: center;
+  padding-top: 13%;
+  line-height: 2.5;
+  padding-left: 10%;
+  width: 50%;
+}
+.abt_links a {
+  font-size: 25px;
+  padding-left: 8%;
+}
+/* html */
+/*   <footer class="foot">
+    <div class="f_split">
+      <div class="lft">
+        <img class="f_logo" src="logo.jpg" />
+      </div>
+      <div class="mid">
+        <p>
+          Your ultimate destination for expert music reviews and
+          recommendations.
+        </p>
+      </div>
+      <div class="rt">
+        <div class="abt_links">
+          <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+          <a href="">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <hr
+      style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+    />
+    <p>Follow us</p>
+    <div class="socials">
+      <a href="https://www.pinterest.com/pin/240590805064809827/">
+        <img
+          src="insta-removebg-preview (copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+      >
+        <img
+          src="insta-removebg-preview (3rd copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+      >
+        <img
+          src="insta-removebg-preview.png"
+          style="width: 50px"
+          class="grid_im"
+      /></a>
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+        ><img src="yt.png" style="width: 50px" class="grid_im"
+      /></a>
+    </div>
+    <div class="copyright">© Cheeta. All rights reserved.</div>
+  </footer>*/

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Artist Spotlight</title>
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/rating2.css">
+    <link rel="stylesheet" href="../static/rating_imagine.css">
+    <link rel="stylesheet" href="../static/rating_ariana.css">
+    <link rel="stylesheet" href="../static/rating_rihanna.css">
+    <link rel="stylesheet" href="../static/rating_taylor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+        </a>
+        <a href="final_artists.html">Artists</a>
+        <a href="about2.html">About</a>
+        <a href="search.html">Search</a>
+        <a class="current" href="spotlight.html">Artist Spotlight</a>
+        <a href="{{ url_for('playlist') }}">Playlist</a>
+    </div>
+
+    <div class="firsthalf">
+        <div class="newsection">Artist Spotlight <div class="newsectiondiffcolor">Page.</div>
+        </div>
+        
+        <div class="artist-image" ><img id="my-image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="../static/images/Postblue.jpeg" ></div>
+        <div class="about_artist">
+            Austin Post, better known as Post Malone, is an American singer and rapper who is known for his versatile
+            ability
+            and blending of genres such as pop, hip-hop and R&B.
+            He found his first recognition from his debut single,
+            White Iverson, which he wrote in just two days. The single made it to #14 on the US Billboard charts
+            and hit 1 million streams
+            on SoundCloud within a month of release.
+            While his music may not be to everyone's taste, Post Malone is undoubtedly a talented singer who can make
+            music
+            in a range of different genres.
+        </div>
+        <div class="announce">
+            Exciting news for fans of Post Malone! The wait for his newest album is almost over.
+            Be one of the first to hear his incredible new tracks by following the countdown clock below.
+            Stay tuned for the big drop!
+        </div>
+        <div class="countdown-timer">
+            <div class="timer-heading">Countdown to Album Release:</div>
+            <div class="timer">
+                <span class="days"></span>
+                <span>:</span>
+                <span class="hours"></span>
+                <span>:</span>
+                <span class="minutes"></span>
+                <span>:</span>
+                <span class="seconds"></span>
+            </div>
+        </div>
+    </div>
+    <div class="newsection">Review Other <span class="newsectiondiffcolor">Artists.</span></div>
+    <div class="container2">
+        <div class="artist">
+            <img src="../static/images/taylor swift for bejeweled music video.jpeg" alt="Artist 1">
+            <div class="artistname">
+                <h2>
+                    Taylor Swift
+                    <button id="expand_taylor-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </h2>
+
+            </div>
+
+
+        </div>
+        <div class="artist">
+            <img src="../static/images/Rihanna lanza Work, el primer single de la era Anti.jpeg" alt=" Artist2">
+            <div class="artistname">
+                <h2>Rihanna
+                    <button id="expand_rihanna-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </h2>
+            </div>
+
+        </div>
+        <div class="artist">
+            <img src="../static/images/me11.jpg" alt="Artist 3">
+            <div class="artistname">
+                <h2>Ariana Grande
+                    <button id="expand_ariana-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </h2>
+            </div>
+
+        </div>
+        <div class="artist">
+            <img src="../static/images/smoke2.jpg" alt="Artist 4">
+            <div class="artistname">
+                <h2>Imagine Dragons
+                    <button id="expand_imagine-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="artist">
+            <img src="../static/images/summ2.jpg" alt="Lana Del Rey">
+            <div class="artistname">
+                <h2>Lana Del Rey
+                    <button id="expand-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </h2>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="rating-form" style="display:none;">
+        <div class="container">
+            <div class="post">
+                <div class="text">Thanks!</div>
+                <div class="edit">Add another review</div>
+            </div>
+            <div class="star-widget">
+
+                <input type="radio" name="rate" id="rate-5" value="5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4" value="4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" value="3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" value="2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" value="1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <div class="text_before_stars">Review Lana Del Rey:</div>
+
+                <form action="#">
+                    <div class="textarea" id="user">
+                        <textarea name="user" cols="30" placeholder="Enter Your Name"></textarea>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="review" cols="30" placeholder="Write Your Review Here..."></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="second">
+            <table id="reviews">
+                <thead>
+                    <tr class="title">
+                        <td style="text-align: center;" width="18%">Name</th>
+                        <td style="text-align: center;" width="18%">Rating</th>
+                        <td style="text-align: center;" width="64%">Review</th>
+                    </tr>
+                </thead>
+                <tbody class="even">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- for imagine dragons -->
+    <div id="rating-form2" style="display:none;">
+        <div class="container_i">
+            <div class="post_i">
+                <div class="text_i">Thanks!</div>
+                <div class="edit_i">Add another review</div>
+            </div>
+            <div class="star-widget_i">
+
+                <input type="radio" name="rate2" id="rate-5_i" value="5">
+                <label for="rate-5_i" class="fas fa-star"></label>
+                <input type="radio" name="rate2" id="rate-4_i" value="4">
+                <label for="rate-4_i" class="fas fa-star"></label>
+                <input type="radio" name="rate2" id="rate-3_i" value="3">
+                <label for="rate-3_i" class="fas fa-star"></label>
+                <input type="radio" name="rate2" id="rate-2_i" value="2">
+                <label for="rate-2_i" class="fas fa-star"></label>
+                <input type="radio" name="rate2" id="rate-1_i" value="1">
+                <label for="rate-1_i" class="fas fa-star"></label>
+                <div class="text_before_stars">Review Imagine Dragons:</div>
+
+                <form class="imagine" action="#">
+                    <div class="textarea_i" id="user_i">
+                        <textarea name="user2" cols="30" placeholder="Enter Your Name"></textarea>
+                    </div>
+                    <div class="textarea_i">
+                        <textarea name="review2" cols="30" placeholder="Write Your Review Here..."></textarea>
+                    </div>
+                    <div class="btn_i">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="second_i">
+            <table id="reviews_i">
+                <thead>
+                    <tr class="title_i">
+                        <td style="text-align: center;" width="18%">Name</th>
+                        <td style="text-align: center;" width="18%">Rating</th>
+                        <td style="text-align: center;" width="64%">Review</th>
+                    </tr>
+                </thead>
+                <tbody class="even_i">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- for rihanna -->
+    <div id="rating-form4" style="display:none;">
+        <div class="container_r">
+            <div class="post_r">
+                <div class="text_r">Thanks!</div>
+                <div class="edit_r">Add another review</div>
+            </div>
+            <div class="star-widget_r">
+
+                <input type="radio" name="rate4" id="rate-5_r" value="5">
+                <label for="rate-5_r" class="fas fa-star"></label>
+                <input type="radio" name="rate4" id="rate-4_r" value="4">
+                <label for="rate-4_r" class="fas fa-star"></label>
+                <input type="radio" name="rate4" id="rate-3_r" value="3">
+                <label for="rate-3_r" class="fas fa-star"></label>
+                <input type="radio" name="rate4" id="rate-2_r" value="2">
+                <label for="rate-2_r" class="fas fa-star"></label>
+                <input type="radio" name="rate4" id="rate-1_r" value="1">
+                <label for="rate-1_r" class="fas fa-star"></label>
+                <div class="text_before_stars">Review Rihanna:</div>
+
+                <form class="rihanna" action="#">
+                    <div class="textarea_r" id="user_r">
+                        <textarea name="user4" cols="30" placeholder="Enter Your Name"></textarea>
+                    </div>
+                    <div class="textarea_r">
+                        <textarea name="review4" cols="30" placeholder="Write Your Review Here..."></textarea>
+                    </div>
+                    <div class="btn_r">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="second_r">
+            <table id="reviews_r">
+                <thead>
+                    <tr class="title_r">
+                        <td style="text-align: center;" width="18%">Name</th>
+                        <td style="text-align: center;" width="18%">Rating</th>
+                        <td style="text-align: center;" width="64%">Review</th>
+                    </tr>
+                </thead>
+                <tbody class="even_r">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- for taylor -->
+    <div id="rating-form5" style="display:none;">
+        <div class="container_t">
+            <div class="post_t">
+                <div class="text_t">Thanks!</div>
+                <div class="edit_t">Add another review</div>
+            </div>
+            <div class="star-widget_t">
+
+                <input type="radio" name="rate5" id="rate-5_t" value="5">
+                <label for="rate-5_t" class="fas fa-star"></label>
+                <input type="radio" name="rate5" id="rate-4_t" value="4">
+                <label for="rate-4_t" class="fas fa-star"></label>
+                <input type="radio" name="rate5" id="rate-3_t" value="3">
+                <label for="rate-3_t" class="fas fa-star"></label>
+                <input type="radio" name="rate5" id="rate-2_t" value="2">
+                <label for="rate-2_t" class="fas fa-star"></label>
+                <input type="radio" name="rate5" id="rate-1_t" value="1">
+                <label for="rate-1_t" class="fas fa-star"></label>
+                <div class="text_before_stars">Review Taylor Swift:</div>
+
+                <form class="taylor" action="#">
+                    <div class="textarea_t" id="user_t">
+                        <textarea name="user5" cols="30" placeholder="Enter Your Name"></textarea>
+                    </div>
+                    <div class="textarea_t">
+                        <textarea name="review5" cols="30" placeholder="Write Your Review Here..."></textarea>
+                    </div>
+                    <div class="btn_t">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="second_t">
+            <table id="reviews_t">
+                <thead>
+                    <tr class="title_t">
+                        <td style="text-align: center;" width="18%">Name</th>
+                        <td style="text-align: center;" width="18%">Rating</th>
+                        <td style="text-align: center;" width="64%">Review</th>
+                    </tr>
+                </thead>
+                <tbody class="even_t">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- for ariana -->
+    <div id="rating-form3" style="display:none;">
+        <div class="container_a">
+            <div class="post_a">
+                <div class="text_a">Thanks!</div>
+                <div class="edit_a">Add another review</div>
+            </div>
+            <div class="star-widget_a">
+
+                <input type="radio" name="rate3" id="rate-5_a" value="5">
+                <label for="rate-5_a" class="fas fa-star"></label>
+                <input type="radio" name="rate3" id="rate-4_a" value="4">
+                <label for="rate-4_a" class="fas fa-star"></label>
+                <input type="radio" name="rate3" id="rate-3_a" value="3">
+                <label for="rate-3_a" class="fas fa-star"></label>
+                <input type="radio" name="rate3" id="rate-2_a" value="2">
+                <label for="rate-2_a" class="fas fa-star"></label>
+                <input type="radio" name="rate3" id="rate-1_a" value="1">
+                <label for="rate-1_a" class="fas fa-star"></label>
+                <div class="text_before_stars">Review Ariana Grande:</div>
+
+                <form class="ariana" action="#">
+                    <div class="textarea_a" id="user">
+                        <textarea name="user3" cols="30" placeholder="Enter Your Name"></textarea>
+                    </div>
+                    <div class="textarea_a">
+                        <textarea name="review3" cols="30" placeholder="Write Your Review Here..."></textarea>
+                    </div>
+                    <div class="btn_a">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="second_a">
+            <table id="reviews_a">
+                <thead>
+                    <tr class="title_a">
+                        <td style="text-align: center;" width="18%">Name</th>
+                        <td style="text-align: center;" width="18%">Rating</th>
+                        <td style="text-align: center;" width="64%">Review</th>
+                    </tr>
+                </thead>
+                <tbody class="even_a">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <div class="f_split">
+          <div class="lft">
+            <img class="f_logo" src="../static/images/logo.jpg" />
+          </div>
+          <div class="mid">
+            <p>
+              Your ultimate destination for expert music reviews and
+              recommendations.
+            </p>
+          </div>
+          <div class="rt">
+            <div class="abt_links">
+              <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+              <a href="home.html">Home</a>
+            </div>
+          </div>
+        </div>
+  
+        <hr
+          style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+        />
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="https://www.pinterest.com/pin/240590805064809827/">
+            <img
+              src="../static/images/insta-removebg-preview (copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+          >
+            <img
+              src="../static/images/insta-removebg-preview (3rd copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+          >
+            <img
+              src="../static/images/insta-removebg-preview.png"
+              style="width: 50px"
+              class="grid_im"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+            ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+          /></a>
+        </div>
+        <div class="copyright">© Cheeta. All rights reserved.</div>
+      </footer>
+    <!-- now java script -->
+    <script src="../static/timer.js"></script>
+    <script src="../static/spotlight.js"></script>
+    <script src="../static/lana.js"></script>
+    <script src="../static/imagine.js"></script>
+    <script src="../static/ariana.js"></script>
+    <script src="../static/rihanna.js"></script>
+    <script src="../static/taylor.js"></script>
+    <script src="../static/navbar.js"></script>
+</body>
+
+</html>

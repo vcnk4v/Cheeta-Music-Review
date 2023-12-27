@@ -1,0 +1,62 @@
+.navbar {
+  overflow: hidden;
+  background-color: rgb(96, 88, 84);
+  background-image: url("images/navbar_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: black;
+}
+@font-face {
+  font-family: Impact;
+  src: url(impact/impact.ttf);
+}
+@font-face {
+  font-family: Cambria, Cochin;
+  src: url(Cochin-Font-1/Cochin.ttf);
+}
+.active {
+  overflow: hidden;
+  background-image: url("images/navbar_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Add an active/current color */
+}
+
+.navbar a {
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: block;
+  color: rgb(64, 18, 7);
+  text-align: center;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.current {
+  border-color: #8d6755;
+  border-radius: 20px;
+  border-width: 0.1px;
+  border-style: outset;
+  border-style: solid;
+  color: antiquewhite;
+  background-color: #8d6755;
+}
+/* .navbar a:hover {
+  color: rgb(64, 18, 7);
+
+  border-color: rgb(64, 18, 7);
+  border-radius: 20px;
+  border-width: 0.1px;
+  border-style: outset;
+  border-style: solid;
+} */

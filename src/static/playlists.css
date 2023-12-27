@@ -1,0 +1,99 @@
+h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 120px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 6px rgb(49, 31, 6), 0 0 2px rgb(209, 232, 236),
+    0 0 5px #e6a100, 0 0 8px #050638, 0 0 10px #c3890b, 0 0 8px #c87800,
+    0 0 5px #e6a900;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body {
+  width: 1920px;
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(24, 18, 7, 0.88),
+      rgba(2, 6, 21, 0.862)
+    ),
+    url("https://images.wallpaperscraft.com/image/single/vintage_notebook_locket_76281_1920x1080.jpg");
+
+  background-attachment: fixed;
+  color: rgb(196, 166, 97);
+}
+th {
+  text-align: center;
+  padding: 1%;
+  font-weight: normal;
+  font-size: 35px;
+  border-bottom: 1px solid rgb(196, 166, 97);
+  color: rgb(196, 166, 97);
+}
+
+td {
+  padding: 0.6%;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 1px solid rgba(247, 231, 178, 0.311);
+  color: rgb(196, 166, 97);
+}
+
+input {
+  padding: 10px;
+  border-color: rgb(121, 116, 106);
+  background-color: rgb(13, 31, 65);
+  color: rgb(219, 194, 143);
+  font-weight: bolder;
+  font-style: oblique;
+  /* font-stretch: expanded; */
+  font-family: cursive;
+  font-size: 95%;
+  letter-spacing: 1px;
+  border-radius: 6%;
+  box-shadow: 0 0 5px rgb(177, 120, 29);
+}
+
+input:hover {
+  background-color: rgb(19, 9, 55);
+  color: #b89647;
+  cursor: pointer;
+}
+footer {
+  margin-top: 25%;
+  position: relative;
+  bottom: 0px;
+}
+.alert {
+  text-align: center;
+  margin-left: 20%;
+  padding: 3%;
+  width: 60%;
+  background-color: #0c1727;
+  border: solid 1px #a19474;
+  color: rgb(221, 198, 167);
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 1000px;
+  border-radius: 5px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

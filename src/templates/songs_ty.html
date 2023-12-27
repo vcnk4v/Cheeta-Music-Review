@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Songs: thank u, next</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <link rel="stylesheet" href="../static/songs.css"/>
+    <style>
+
+
+        .hi {
+            font-size: 105px;
+            font-style: italic;
+            color: rgb(193, 160, 115);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+
+
+        }
+
+        .artist-img {
+          padding-left: 6%;
+            padding-right: 6%;
+            padding-bottom: 6%;
+            padding-top: 1%;
+            width: 20%;
+            margin-right: 15%;
+            border-radius: 0%;
+            float: left;
+            object-fit: cover;
+            box-shadow: 0 4px 8px 0 rgb(220, 156, 100), 0 6px 20px 0 rgb(22, 19, 23);
+        }
+
+        body {
+            width: 1920px;
+            height: 1080px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(95, 45, 53, 0.574),rgba(86, 46, 54, 0.687),rgba(29, 1, 17, 0.687)), url("../static/images/postback.jpeg");
+
+            background-attachment: fixed;
+
+        }
+ 
+        .bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(58, 12, 27, 0.405), rgba(33, 5, 24, 0.751), rgba(24, 3, 34, 0.834), rgb(1, 3, 16)), url("../static/images/postback.jpeg");
+
+            background-attachment: fixed;
+            border-bottom: 1px solid rgb(193, 160, 115);
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+    </a>
+    <a href="final_artists.html">Artists</a>
+    <a href="about2.html">About</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+    <a class="current" href="">Songs</a>
+</div>
+  
+
+
+
+    <div class="bg">
+        <div style="float: right;">
+            <img class="logo" src="../static/images/logo.jpg">
+        </div>
+
+        <div class="container">
+            <!-- <div style="float: left;"> -->
+                <img class="artist-img" src="../static/images/thank.jpg">
+            <!-- </div> -->
+            <div class="heading" style="float: left;">
+                <p class="hi">thank u, next</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+   
+        <!-- <div class="meet">Meet the Creators</div> -->
+       
+
+        <!-- <img src="flow-removebg.png" width="100%"/> -->
+        <div class="box2">
+            <img src="../static/images/ty1.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">thank u, next</p>
+               
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Ariana Grande</p>
+                <p class="line2">3:27</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="136">
+                  <input type="hidden" id="song_name" name="song_name" value="thank u, next">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Arinana Grande">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="box2">
+            <img src="../static/images/ty2.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">7 Rings</p>
+               
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Ariana Grande</p>
+                <p class="line2">2:58</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="137">
+                  <input type="hidden" id="song_name" name="song_name" value="7 Rings">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Arinana Grande">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="../static/images/ty3.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">imagine</p>
+              
+         <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Ariana Grande</p>
+                <p class="line2">3:32</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="138">
+                  <input type="hidden" id="song_name" name="song_name" value="imagine">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Arinana Grande">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+  
+
+        <div class="box2">
+            <img src="../static/images/ty4bef822174e68cb1ce807af5fe8392620.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">break up with your girlfriend, i'm bored</p>
+                
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Ariana Grande</p>
+                <p class="line2">3:10</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="139">
+                  <input type="hidden" id="song_name" name="song_name" value="break up with your girlfriend, i'm bored">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Arinana Grande">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+            
+            
+        </div> 
+        <div class="box3">
+            <img src="../static/images/ty5.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">make up</p>
+              
+         <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Ariana Grande</p>
+                <p class="line2">3:27</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="140">
+                  <input type="hidden" id="song_name" name="song_name" value="make up">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Arinana Grande">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+  
+       
+  <div>
+    <footer class="foot">
+        <div class="f_split">
+          <div class="lft">
+            <img class="f_logo" src="../static/images/logo.jpg" />
+          </div>
+          <div class="mid">
+            <p>
+              Your ultimate destination for expert music reviews and
+              recommendations.
+            </p>
+          </div>
+          <div class="rt">
+            <div class="abt_links">
+              <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+              <a href="home.html">Home</a>
+            </div>
+          </div>
+        </div>
+    
+        <hr
+          style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+        />
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="https://www.pinterest.com/pin/240590805064809827/">
+            <img
+              src="../static/images/insta-removebg-preview (copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+          >
+            <img
+              src="../static/images/insta-removebg-preview (3rd copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+          >
+            <img
+              src="../static/images/insta-removebg-preview.png"
+              style="width: 50px"
+              class="grid_im"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+            ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+          /></a>
+        </div>
+        <div class="copyright">© Cheeta. All rights reserved.</div>
+    </footer>
+    <script src="../static/navbar.js"></script>
+</div>
+</body>

@@ -1,0 +1,226 @@
+.star-widget_r {
+    width: 90%;
+}
+
+#rating-form4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-color: rgb(130, 165, 202);
+    display: grid;
+
+}
+
+
+.container_r {
+    position: relative;
+    width: 60%;
+    background: #111;
+    padding: 20px 30px;
+    margin-left: 19%;
+    margin-right: 41%;
+    margin-bottom: 5%;
+    border: 1px solid rgb(86, 134, 149);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_r .post_r {
+    display: none;
+}
+
+.container_r .text_r {
+    /* position: absolute; */
+    /* right: 10px;
+  top: 5px; */
+    padding-bottom: 2%;
+    font-style: oblique;
+
+    font-size: 16px;
+
+    color: #666;
+    font-weight: 500;
+}
+
+.container_r .edit_r {
+
+    font-size: 25px;
+    color: #666;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container_r .edit_r:hover {
+    text-decoration: underline;
+}
+
+.container_r .star-widget_r input {
+    display: none;
+}
+
+.star-widget_r label {
+    font-size: 40px;
+    color: #444;
+    padding: 40px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+    
+    color: rgb(130, 184, 202);
+ 
+    text-shadow: 0 0 20px rgb(133, 165, 198);
+}
+
+input:checked~label {
+   
+    color: rgb(130, 184, 202);
+    text-shadow: 0 0 20px rgb(133, 165, 198);
+}
+
+input#rate-5_r:checked~label {
+  
+    color: rgb(130, 184, 202);
+
+    text-shadow: 0 0 20px rgb(133, 165, 198);
+}
+
+.container_r form {
+    display: none;
+}
+
+input:checked~form {
+    display: block;
+}
+
+/* .imagine header {
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+} */
+
+.rihanna .textarea_r {
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 7%;
+}
+
+#user_r {
+    height: 30px;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
+.rihanna .textarea_r textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: rgb(200, 234, 236);
+    /* border: 1px solid #333; */
+    border: 1px solid rgb(58, 77, 79);
+    background: rgb(30, 37, 42);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.textarea_r textarea:focus {
+    border-color: #444;
+}
+
+.rihanna .btn_r {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.rihanna .btn_r button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(58, 77, 79);
+    outline: none;
+    background: rgb(30, 37, 42);
+    color: rgb(200, 234, 236);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rihanna .btn_r button:hover {
+    background: #0e4f5b;
+}
+
+.expand_rihanna-btn{
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.expand_rihanna-btn i {
+    margin-left: 5px;
+}
+
+.rating-form4 {
+    margin-top: 20px;
+}
+
+/* table {
+    padding-left: 15%;
+    width: 100%;
+    padding: 30px 0px;
+    border: none;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    border-collapse: collapse;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+td {
+    padding: 20px 0px;
+    border: none;
+
+    letter-spacing: 1px;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 22px;
+
+    color: rgba(139, 216, 207, 0.834);
+    text-transform: capitalize;
+} */
+
+.second_r {
+    color: #2c2826;
+    padding: 1px;
+    font-size: 21px;
+}
+
+.title_r {
+
+    color: rgb(148, 177, 195);
+    border-bottom: 1px solid rgb(97, 186, 196);
+
+    height: 40px;
+}

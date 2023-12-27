@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Songs: Born To Die</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <link rel="stylesheet" href="../static/songs.css"/>
+    <style>
+
+    .hi {
+        font-size: 105px;
+        font-style: italic;
+        color: rgb(193, 160, 115);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+
+
+    }
+
+
+    .artist-img {
+      padding-left: 6%;
+            padding-right: 6%;
+            padding-bottom: 6%;
+            padding-top: 1%;
+            margin-right: 15%;
+        width: 20%;
+        border-radius: 0%;
+        float: left;
+        object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(193, 158, 98, 0.885), 0 6px 20px 0 rgb(9, 9, 13);
+    }
+
+    body {
+        width: 1920px;
+        height: 1080px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(176, 107, 16, 0.486),rgba(24, 11, 0, 0.687)), url("../static/images/postback.jpeg");
+
+        background-attachment: fixed;
+
+    }
+    
+    .bg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(60, 32, 1, 0.689), rgb(23, 13, 4), rgb(47, 28, 16), rgb(16, 9, 1)), url("../static/images/postback.jpeg");
+
+        background-attachment: fixed;
+        border-bottom: 1px solid rgb(193, 160, 115);
+    }
+
+        
+    </style>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+    </a>
+    <a href="final_artists.html">Artists</a>
+    <a href="about2.html">About</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+    <a class="current" href="">Songs</a>
+</div>
+  
+  
+
+
+
+    <div class="bg">
+        <div style="float: right;">
+            <img class="logo" src="../static/images/logo.jpg">
+        </div>
+
+        <div class="container">
+            <!-- <div style="float: left;"> -->
+                <img class="artist-img" src="../static/images/borntodie.jpeg">
+            <!-- </div> -->
+            <div class="heading" style="float: left;">
+                <p class="hi">Born To Die</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+   
+        <!-- <div class="meet">Meet the Creators</div> -->
+       
+
+        <!-- <img src="flow-removebg.png" width="100%"/> -->
+        <div class="box2">
+            <img src="../static/images/summ.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Summertime Sadness</p>
+               
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Lana Del Rey</p>
+                <p class="line2">4:25</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="26">
+                  <input type="hidden" id="song_name" name="song_name" value="Summertime Sadness">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Lana Del Rey">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="../static/images/summ2.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Born To Die</p>
+              
+         <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Lana Del Rey</p>
+                <p class="line2">4:45</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="27">
+                  <input type="hidden" id="song_name" name="song_name" value="Born To Die">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Lana Del Rey">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+      
+        <div class="box2">
+          <img src="../static/images/summ6.jpeg" class="left_img" />
+          <div class="creatorleft">
+              <p class="head1">Ride</p>
+             
+        <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+              <p class="line1">By Lana Del Rey</p>
+              <p class="line2">4:49</p>
+              <form method="post" action="{{ url_for('add_to_playlist') }}">
+                <input type="hidden" name="song_id" value="28">
+                <input type="hidden" id="song_name" name="song_name" value="Ride">
+                <input type="hidden" id="artist_name" name="artist_name" value="Lana Del Rey">
+                <button type="submit">Add to Playlist</button>
+            </form>
+          </div>
+      </div>
+
+     
+
+
+        <div class="box2">
+          <img src="../static/images/summ4.jpeg" class="left_img" />
+          <div class="creatorleft">
+              <p class="head1">Blue Jeans</p>
+            
+       <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+              <p class="line1">By Lana Del Rey</p>
+              <p class="line2">3:29</p>
+              <form method="post" action="{{ url_for('add_to_playlist') }}">
+                <input type="hidden" name="song_id" value="29">
+                <input type="hidden" id="song_name" name="song_name" value="Blue Jeans">
+                <input type="hidden" id="artist_name" name="artist_name" value="Lana Del Rey">
+                <button type="submit">Add to Playlist</button>
+            </form>
+          </div>
+      </div>
+
+        <div class="box3">
+            <img src="../static/images/summ5.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Video Games</p>
+                
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Lana Del Rey</p>
+                <p class="line2">4:41</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="30">
+                  <input type="hidden" id="song_name" name="song_name" value="Video Games">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Lana Del Rey">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+            
+            
+            <!-- <img src="cute-removebg-preview.png" width="50%"/> -->
+        </div> 
+        
+  <div>
+    <footer class="foot">
+        <div class="f_split">
+          <div class="lft">
+            <img class="f_logo" src="../static/images/logo.jpg" />
+          </div>
+          <div class="mid">
+            <p>
+              Your ultimate destination for expert music reviews and
+              recommendations.
+            </p>
+          </div>
+          <div class="rt">
+            <div class="abt_links">
+              <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+              <a href="home.html">Home</a>
+            </div>
+          </div>
+        </div>
+    
+        <hr
+          style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+        />
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="https://www.pinterest.com/pin/240590805064809827/">
+            <img
+              src="../static/images/insta-removebg-preview (copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+          >
+            <img
+              src="../static/images/insta-removebg-preview (3rd copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+          >
+            <img
+              src="../static/images/insta-removebg-preview.png"
+              style="width: 50px"
+              class="grid_im"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+            ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+          /></a>
+        </div>
+        <div class="copyright">© Cheeta. All rights reserved.</div>
+    </footer>
+</div>
+<script src="../static/navbar.js"></script>
+</body>
+</html>

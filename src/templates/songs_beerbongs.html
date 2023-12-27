@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <title>Song: beerbongs & bentleys</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/footer.css">
+  <link rel="stylesheet" href="../static/navbarr.css">
+  <link rel="stylesheet" href="../static/songs.css"/>
+  <style>
+
+    .hi {
+      font-size: 95px;
+      font-style: italic;
+      color: rgb(193, 160, 115);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+
+
+    }
+
+    .artist-img {
+      padding: 10%;
+      margin-top: 5px;
+      width: 50%;
+      height: 72%;
+      border-radius: 0%;
+      padding-top: 5px;
+
+      object-fit: cover;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.885), 0 6px 20px 0 rgb(23, 22, 19);
+    }
+
+    body {
+      width: 1920px;
+      height: 1080px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: linear-gradient(to bottom, rgba(8, 44, 68, 0.852), rgba(36, 26, 3, 0.565), rgba(24, 18, 18, 0.476)), url("../static/images/postback.jpeg");
+
+      background-attachment: fixed;
+    }
+
+
+    .bg {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image:
+        linear-gradient(to bottom, rgba(30, 41, 45, 0.53), rgb(44, 38, 30), rgb(16, 29, 47), rgb(9, 26, 21)), url("../static/images/postback.jpeg");
+      background-attachment: fixed;
+      border-bottom: 1px solid rgb(193, 160, 115);
+    }
+
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+  </a>
+  <a href="final_artists.html">Artists</a>
+  <a href="about2.html">About</a>
+  <a href="search.html">Search</a>
+  <a href="spotlight.html">Artist Spotlight</a>
+  <a href="{{ url_for('playlist') }}">Playlist</a>
+  <a class="current" href="">Songs</a>
+</div>
+  
+  
+
+
+
+  <div class="bg">
+
+
+
+    <div style="float: right;">
+      <img class="logo" src="../static/images/logo.jpg">
+    </div>
+
+    <div class="container">
+      <div style="float: left;">
+        <img class="artist-img" src="../static/images/beeryellow.jpeg">
+      </div>
+      <div class="heading" style="float: left;">
+        <p class="hi">beerbongs & bentleys</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="box2">
+
+    
+    <img src="../static/images/_ (fire).jpeg" class="left_img" />
+    <div class="creatorleft">
+      <p class="head1">Spoil My Night</p>
+    
+      <img src="../static/images/cute-removebg-preview.png" width="30%" />
+      <p class="line1">By Post Malone</p>
+      <p class="line2">3:15</p>
+      <form method="post" action="{{ url_for('add_to_playlist') }}">
+        <input type="hidden" name="song_id" value="21">
+        <input type="hidden" id="song_name" name="song_name" value="Spoil My Night">
+        <input type="hidden" id="artist_name" name="artist_name" value="Post Malone">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    </div>
+  </div>
+
+
+  <div class="box2">
+    <img src="../static/images/Posty fest.jpeg" class="left_img" />
+    <div class="creatorleft">
+      <p class="head1">Rockstar</p>
+   
+      <img src="../static/images/cute-removebg-preview.png" width="30%" />
+      <p class="line1">By Post Malone</p>
+      <p class="line2">3:38</p>
+      <form method="post" action="{{ url_for('add_to_playlist') }}">
+        <input type="hidden" name="song_id" value="22">
+        <input type="hidden" id="song_name" name="song_name" value="Rockstar">
+        <input type="hidden" id="artist_name" name="artist_name" value="Post Malone">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    </div>
+  </div>
+
+  <div class="box2">
+    <img src="../static/images/Post Malone _Beerbongs & Bentleys_ album campaign.png" class="left_img" />
+    <div class="creatorleft">
+      <p class="head1">Sugar Wraith</p>
+   
+      <img src="../static/images/cute-removebg-preview.png" width="30%" />
+      <p class="line1">By Post Malone</p>
+      <p class="line2">3:48</p>
+      <form method="post" action="{{ url_for('add_to_playlist') }}">
+        <input type="hidden" name="song_id" value="23">
+        <input type="hidden" id="song_name" name="song_name" value="Sugar Wraith">
+        <input type="hidden" id="artist_name" name="artist_name" value="Post Malone">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    </div>
+  </div>
+
+  <div class="box2">
+    <img src="../static/images/_ (hi).jpeg" class="left_img" />
+    <div class="creatorleft">
+      <p class="head1">Rich & Sad</p>
+    
+      <img src="../static/images/cute-removebg-preview.png" width="30%" />
+      <p class="line1">By Post Malone</p>
+      <p class="line2">3:26</p>
+      <form method="post" action="{{ url_for('add_to_playlist') }}">
+        <input type="hidden" name="song_id" value="24">
+        <input type="hidden" id="song_name" name="song_name" value="Rich & Sad">
+        <input type="hidden" id="artist_name" name="artist_name" value="Post Malone">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    </div>
+  </div>
+
+
+  <div class="box3">
+    <img src="../static/images/Post Malone _Beerbongs & Bentleys_ album campaign.jpeg" class="left_img" />
+    <div class="creatorleft">
+      <p class="head1">Jonestown</p>
+   
+      <img src="../static/images/cute-removebg-preview.png" width="30%" />
+      <p class="line1">By Post Malone</p>
+      <p class="line2">1:52</p>
+      <form method="post" action="{{ url_for('add_to_playlist') }}">
+        <input type="hidden" name="song_id" value="25">
+        <input type="hidden" id="song_name" name="song_name" value="Jonestown">
+        <input type="hidden" id="artist_name" name="artist_name" value="Post Malone">
+        <button type="submit">Add to Playlist</button>
+    </form>
+    </div>
+
+  </div>
+
+  <footer class="foot">
+    <div class="f_split">
+      <div class="lft">
+        <img class="f_logo" src="../static/images/logo.jpg" />
+      </div>
+      <div class="mid">
+        <p>
+          Your ultimate destination for expert music reviews and
+          recommendations.
+        </p>
+      </div>
+      <div class="rt">
+        <div class="abt_links">
+          <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+          <a href="home.html">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <hr
+      style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+    />
+    <p>Follow us</p>
+    <div class="socials">
+      <a href="https://www.pinterest.com/pin/240590805064809827/">
+        <img
+          src="../static/images/insta-removebg-preview (copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+      >
+        <img
+          src="../static/images/insta-removebg-preview (3rd copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+      >
+        <img
+          src="../static/images/insta-removebg-preview.png"
+          style="width: 50px"
+          class="grid_im"
+      /></a>
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+        ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+      /></a>
+    </div>
+    <div class="copyright">© Cheeta. All rights reserved.</div>
+</footer>
+<script src="../static/navbar.js"></script>
+</body>
+</html>

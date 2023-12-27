@@ -1,0 +1,157 @@
+body {
+  width: 1920px;
+  height: 1080px;
+  background-color: rgb(33, 32, 32);
+}
+.logo {
+  width: 17%;
+  border-radius: 8%;
+  margin-top: 2.5%;
+  margin-right: 5%;
+  float: right;
+  opacity: 0.8;
+}
+.head {
+  background-image: url(images/old-pape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100px;
+  color: antiquewhite;
+
+  letter-spacing: 5px;
+  width: 100%;
+  margin-top: 18px;
+
+  padding-bottom: 12%;
+}
+.headtxt {
+  padding-left: 13%;
+  padding-top: 13%;
+  text-align: center;
+}
+.split {
+  height: 40%;
+  display: flex;
+}
+.right {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(65, 62, 53),
+    rgb(197, 175, 133)
+  );
+  width: 50%;
+  padding-left: 50px;
+  color: aliceblue;
+  font-size: 50px;
+  padding-top: 10%;
+  padding-left: 5%;
+  right: 0;
+}
+
+.left {
+  width: 50%;
+  left: 0;
+  background-color: black;
+}
+.box1 {
+  height: 900px;
+  width: 99%;
+  padding: 2%;
+  margin: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/smoke.avif);
+}
+
+.split p {
+  color: aliceblue;
+  font-size: 19px;
+  line-height: 2.3;
+  padding-right: 20%;
+  padding-left: 4%;
+  margin-top: 0%;
+}
+.box1 p {
+  font-size: 24px;
+  font-weight: 100;
+  color: rgb(245, 249, 249);
+  padding-left: 3%;
+  width: 40%;
+  line-height: 1.5;
+  padding-top: 0.8%;
+}
+
+.box1 p1 {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  padding-left: 3%;
+  margin-top: 0%;
+}
+
+.box2 {
+  height: 1020px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgb(5, 0, 22), rgb(92, 55, 46));
+}
+
+.box p {
+  font-size: 50px;
+  font-family: mostra-nuova, sans-serif;
+  line-height: 2;
+  padding-right: 30px;
+  width: 60%;
+}
+.aud {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding-left: 3%;
+  margin-top: 0%;
+  text-align: center;
+  width: 40%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.left_img {
+  border-radius: 50%;
+  width: 20%;
+  margin-top: 4%;
+  float: left;
+  height: 40%;
+  margin-left: 15%;
+  margin-bottom: 3%;
+  box-shadow: 2px 2px 2px rgb(194, 194, 68);
+}
+.right_img {
+  border-radius: 50%;
+  width: 20%;
+  margin-top: 2%;
+  height: 38%;
+  float: right;
+  margin-right: 15%;
+  box-shadow: 2px 2px 2px rgb(194, 194, 68);
+}
+.box2 p {
+  font-size: 18px;
+  color: rgb(240, 219, 150);
+}
+.creator {
+  color: rgb(240, 219, 150);
+  text-align: left;
+  width: 45%;
+  margin-top: 7%;
+  float: right;
+  font-size: 30px;
+}
+.box2 h3 {
+  font-family: "essonnes-display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}

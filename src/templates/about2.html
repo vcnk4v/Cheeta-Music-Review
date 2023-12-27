@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Cheeta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/footer.css" />
+    <link rel="stylesheet" href="../static/navbarr.css" />
+    <link rel="stylesheet" href="../static/about.css"/>
+    
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+      </a>
+      <a href="final_artists.html">Artists</a>
+      <a  class="current" href="about2.html">About</a>
+      <a href="search.html">Search</a>
+        <a href="spotlight.html">Artist Spotlight</a>
+        <a href="{{ url_for('playlist') }}">Playlist</a>
+    </div>
+    <div class="head">
+      <div><img class="logo" src="../static/images/logo.jpg" /></div>
+      <div class="headtxt">About Us</div>
+    </div>
+    <div>
+      <div class="split">
+        <div class="left">
+          <img
+            src="../static/images/Beige Brown Vintage Page Border Document A4(1).jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="right">
+          FEATURES
+          <hr style="color: rgb(208, 187, 162); width: 70%; margin-left: 0px" />
+          <p>
+            Welcome to Cheeta, an immersive platform designed specifically for
+            music lovers! We boast a sleek and intuitive interface that allows
+            you to easily navigate through a variety of genres, artists, and
+            insightful reviews. Here you can easily find the latest album
+            releases, your favorite artists and their songs. Join our vibrant
+            community where you can share your opinions, connect with fellow
+            music enthusiasts, and engage in lively discussions about the tracks
+            you love. Let our passion for music ignite your own, and we invite
+            you to join us on this journey of discovery and inspiration.
+          </p>
+          <hr
+            style="
+              color: rgb(208, 187, 162);
+              width: 70%;
+              margin-left: 0px;
+              margin-top: 40px;
+            "
+          />
+        </div>
+      </div>
+    </div>
+    <div class="box1">
+      <p></p>
+      <p1>Our Purpose</p1>
+      <hr
+        style="
+          color: rgba(247, 240, 235, 0.922);
+          width: 50%;
+          margin-left: 20px;
+          margin-top: 30px;
+        "
+      />
+      <p>
+        We believe music can come from unexpected places- just like the chirp of
+        Cheetahs. Our purpose is to bring together a diverse community of music
+        lovers and explore the depths of the music world to discover hidden
+        gems. We aim to help you find music that can uplift, inpire and most of
+        all, music that speaks to your soul.
+      </p>
+      <div class="aud">
+        <audio controls autoplay muted>
+          <source
+            src="../static/audio/what-noise-do-cheetahs-make.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <br />
+        CHIRP OF CHEETAHS
+      </div>
+    </div>
+    <div class="box2">
+      <hr style="color: rgb(147, 133, 83); width: 100%; margin-top: 0px" />
+      <img src="../static/images/medha.jpeg" class="left_img" />
+      <div class="creator">
+        <h3>Medha Prasad</h3>
+        <hr
+          style="
+            color: rgb(243, 233, 177);
+            width: 30%;
+            margin-left: 0px;
+            margin-bottom: 5%;
+            margin-top: 5%;
+          "
+        />
+        <p>medha.prasad@students.iiit.ac.in</p>
+        <p>2022101034</p>
+      </div>
+      <hr style="color: rgb(113, 102, 63); width: 90%" />
+      <img src="../static/images/vyakhya.jpeg" class="right_img" />
+      <div class="creator">
+        <h3>Vyakhya Gupta</h3>
+        <hr
+          style="
+            color: rgb(243, 233, 177);
+            width: 30%;
+            margin-left: 0px;
+            margin-bottom: 5%;
+            margin-top: 5%;
+          "
+        />
+        <p>vyakhya.gupta@students.iiit.ac.in</p>
+        <p>2022101104</p>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="f_split">
+        <div class="lft">
+          <img class="f_logo" src="../static/images/logo.jpg" />
+        </div>
+        <div class="mid">
+          <p>
+            Your ultimate destination for expert music reviews and
+            recommendations.
+          </p>
+        </div>
+        <div class="rt">
+          <div class="abt_links">
+            <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+            <a href="home.html">Home</a>
+          </div>
+        </div>
+      </div>
+
+      <hr
+        style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+      />
+      <p>Follow us</p>
+      <div class="socials">
+        <a href="https://www.pinterest.com/pin/240590805064809827/">
+          <img
+            src="../static/images/insta-removebg-preview (copy).png"
+            style="width: 50px"
+            class="grid_im"
+          />
+        </a>
+        <a
+          href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+        >
+          <img
+            src="../static/images/insta-removebg-preview (3rd copy).png"
+            style="width: 50px"
+            class="grid_im"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+        >
+          <img
+            src="../static/images/insta-removebg-preview.png"
+            style="width: 50px"
+            class="grid_im"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+          ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+        /></a>
+      </div>
+      <div class="copyright">© Cheeta. All rights reserved.</div>
+    </footer>
+    <script src="../static/navbar.js"></script>
+  </body>
+</html>

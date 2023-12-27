@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+    <title>Song: Talk That Talk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <link rel="stylesheet" href="../static/songs.css"/>
+    <style>
+
+        .hi {
+            font-size: 101px;
+            font-style: italic;
+            color: rgb(193, 160, 115);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+
+
+        }
+
+      
+        .artist-img {
+            padding: 10%;
+            margin-top: 5px;
+            width: 50%;
+            height: 72%;
+            border-radius: 0%;
+            padding-top: 5px;
+
+            object-fit: cover;
+            box-shadow: 0 4px 8px 0 rgb(209, 194, 178), 0 6px 20px 0 rgb(218, 203, 152);
+        }
+
+        body {
+            width: 1920px;
+            height: 1080px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image:  linear-gradient(to bottom, rgba(96, 55, 19, 0.396),rgba(67, 67, 69, 0.565),rgba(2, 25, 19, 0.476)), url("../static/images/postback.jpeg");
+
+            background-attachment: fixed;
+
+
+
+        }
+
+
+        .bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: 
+            linear-gradient(to bottom,  rgba(0, 0, 0, 0.924), rgba(255, 255, 255, 0.119), rgba(0, 0, 0, 0.51)), url("../static/images/postback.jpeg");
+            background-attachment: fixed;
+            border-bottom: 1px solid rgb(193, 160, 115);
+        }
+ 
+    </style>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+    </a>
+    <a href="final_artists.html">Artists</a>
+    <a href="about2.html">About</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+    <a class="current" href="">Songs</a>
+</div>
+  
+
+
+    <div class="bg">
+
+
+
+        <div style="float: right;">
+            <img class="logo" src="../static/images/logo.jpg">
+        </div>
+
+        <div class="container">
+            <div style="float: left;">
+                <img class="artist-img" src="../static/images/Talk That Talk .jpeg">
+            </div>
+            <div class="heading" style="float: left;">
+                <p class="hi">Talk That Talk</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+   
+        <!-- <div class="meet">Meet the Creators</div> -->
+       
+
+        <!-- <img src="flow-removebg.png" width="100%"/> -->
+
+        <div class="box2">
+            
+            <!-- <hr style="color:  rgb(193, 160, 115); width: 1500px; margin-top: 10%; align-self:center"/> -->
+            <img src="../static/images/Rihanna - You Da One (single cover).jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">You Da One</p>
+      
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Rihanna</p>
+                <p class="line2">3:20</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="131">
+                  <input type="hidden" id="song_name" name="song_name" value="You Da One">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Rihanna">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+
+        <div class="box2">
+            <img src="../static/images/love this album!!!  rihanna, talk that talk.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Talk That Talk</p>
+      
+         <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Rihanna</p>
+                <p class="line2">3:29</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="132">
+                  <input type="hidden" id="song_name" name="song_name" value="Talk That Talk">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Rihanna">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="box2">
+            <img src="../static/images/Birthday Cake.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Birthday Cake</p>
+      
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Rihanna</p>
+                <p class="line2">1:18</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="133">
+                  <input type="hidden" id="song_name" name="song_name" value="Birthday Cake">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Rihanna">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="box2">
+            <img src="../static/images/Rihanna Talk That Talk.jpeg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Roc Me Out</p>
+             \
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Rihanna</p>
+                <p class="line2">3:29</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="134">
+                  <input type="hidden" id="song_name" name="song_name" value="Roc Me Out">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Rihanna">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+
+        <div class="box3">
+            <img src="../static/images/Tumblr.png" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Watch n' Learn</p>
+               \
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Rihanna</p>
+                <p class="line2">3:31</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="135">
+                  <input type="hidden" id="song_name" name="song_name" value="Watch n' Learn">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Rihanna">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+            <!-- <hr style="color: rgb(193, 160, 115); width: 1500px; margin-bottom: 10%; align-self:center"/> -->
+            <!-- <img src="cute-removebg-preview.png" width="50%"/> -->
+        </div> 
+
+        <footer class="foot">
+            <div class="f_split">
+              <div class="lft">
+                <img class="f_logo" src="../static/images/logo.jpg" />
+              </div>
+              <div class="mid">
+                <p>
+                  Your ultimate destination for expert music reviews and
+                  recommendations.
+                </p>
+              </div>
+              <div class="rt">
+                <div class="abt_links">
+                  <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+                  <a href="home.html">Home</a>
+                </div>
+              </div>
+            </div>
+        
+            <hr
+              style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+            />
+            <p>Follow us</p>
+            <div class="socials">
+              <a href="https://www.pinterest.com/pin/240590805064809827/">
+                <img
+                  src="../static/images/insta-removebg-preview (copy).png"
+                  style="width: 50px"
+                  class="grid_im"
+                />
+              </a>
+              <a
+                href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+              >
+                <img
+                  src="../static/images/insta-removebg-preview (3rd copy).png"
+                  style="width: 50px"
+                  class="grid_im"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  src="../static/images/insta-removebg-preview.png"
+                  style="width: 50px"
+                  class="grid_im"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+                ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+              /></a>
+            </div>
+            <div class="copyright">© Cheeta. All rights reserved.</div>
+        </footer>
+        <script src="../static/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+    <title>Songs: Evolve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <link rel="stylesheet" href="../static/songs.css"/>
+    <style>
+          .hi {
+            font-size: 106px;
+            font-style: italic;
+            color: rgb(193, 160, 115);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+
+        }
+        
+        .artist-img {
+            padding: 6%;
+            width: 20%;
+            margin-right: 15%;
+
+            border-radius: 0%;
+            float: left;
+            object-fit: cover;
+            box-shadow: 0 4px 8px 0 rgb(225, 217, 167), 0 6px 20px 0 rgb(9, 9, 13);
+        }
+
+        body {
+            width: 1920px;
+            height: 1080px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(49, 41, 105, 0.591),rgba(1, 5, 29, 0.751)), url("../static/images/postback.jpeg");
+
+            background-attachment: fixed;
+
+        }
+   
+        .bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(52, 52, 81, 0.658), rgb(4, 10, 23), rgb(16, 29, 47), rgb(1, 3, 16)), url("../static/images/postback.jpeg");
+
+            background-attachment: fixed;
+            border-bottom: 1px solid rgb(193, 160, 115);
+        }
+
+  
+    </style>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+    </a>
+    <a href="final_artists.html">Artists</a>
+    <a href="about2.html">About</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+    <a class="current" href="">Songs</a>
+</div>
+  
+  
+
+
+
+
+    <div class="bg">
+        <div style="float: right;">
+            <img class="logo" src="../static/images/logo.jpg">
+        </div>
+
+        <div class="container">
+            <!-- <div style="float: left;"> -->
+                <img class="artist-img" src="../static/images/evolve.jpg">
+            <!-- </div> -->
+            <div class="heading" style="float: left;">
+                <p class="hi">Evolve</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+   
+        <!-- <div class="meet">Meet the Creators</div> -->
+       
+
+        <!-- <img src="flow-removebg.png" width="100%"/> -->
+        <div class="box2">
+          <img src="../static/images/ev1.jpg" class="left_img" />
+          <div class="creatorleft">
+              <p class="head1">Next to Me</p>
+             
+        <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+              <p class="line1">By Imagine Dragons</p>
+              <p class="line2">3:50</p>
+              <form method="post" action="{{ url_for('add_to_playlist') }}">
+                <input type="hidden" name="song_id" value="41">
+                <input type="hidden" id="song_name" name="song_name" value="Next to Me">
+                <input type="hidden" id="artist_name" name="artist_name" value="Imagine Dragons">
+                <button type="submit">Add to Playlist</button>
+            </form>
+          </div>
+      </div>
+
+        <div class="box2">
+          <img src="../static/images/Imagine Dragons Daily Fansite.jpeg" class="left_img" />
+          <div class="creatorleft">
+              <p class="head1">Thunder</p>
+            
+       <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+              <p class="line1">By Imagine Dragons</p>
+              <p class="line2">3:07</p>
+              <form method="post" action="{{ url_for('add_to_playlist') }}">
+                <input type="hidden" name="song_id" value="42">
+                <input type="hidden" id="song_name" name="song_name" value="Thunder">
+                <input type="hidden" id="artist_name" name="artist_name" value="Imagine Dragons">
+                <button type="submit">Add to Playlist</button>
+            </form>
+          </div>
+      </div>
+
+    
+        
+        <div class="box2">
+            <img src="../static/images/ev3.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Dancing In The Dark</p>
+               
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Imagine Dragons</p>
+                <p class="line2">3:53</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="43">
+                  <input type="hidden" id="song_name" name="song_name" value="Dancing In The Dark">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Imagine Dragons">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="box2">
+          <img src="../static/images/ev4.jpg" class="left_img" />
+          <div class="creatorleft">
+              <p class="head1">Believer</p>
+            
+       <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+              <p class="line1">By Imagine Dragons</p>
+              <p class="line2">3:24</p>
+              <form method="post" action="{{ url_for('add_to_playlist') }}">
+                <input type="hidden" name="song_id" value="44">
+                <input type="hidden" id="song_name" name="song_name" value="Believer">
+                <input type="hidden" id="artist_name" name="artist_name" value="Imagine Dragons">
+                <button type="submit">Add to Playlist</button>
+            </form>
+          </div>
+      </div>
+
+        <div class="box3">
+            <img src="../static/images/ev5.jpg" class="left_img" />
+            <div class="creatorleft">
+                <p class="head1">Mouth Of The River</p>
+                
+          <img src="../static/images/cute-removebg-preview.png" width="30%"  />
+                <p class="line1">By Imagine Dragons</p>
+                <p class="line2">3:21</p>
+                <form method="post" action="{{ url_for('add_to_playlist') }}">
+                  <input type="hidden" name="song_id" value="45">
+                  <input type="hidden" id="song_name" name="song_name" value="Mouth Of The River">
+                  <input type="hidden" id="artist_name" name="artist_name" value="Imagine Dragons">
+                  <button type="submit">Add to Playlist</button>
+              </form>
+            </div>
+            
+            
+            <!-- <img src="cute-removebg-preview.png" width="50%"/> -->
+        </div> 
+        
+  <div>
+    <footer class="foot">
+        <div class="f_split">
+          <div class="lft">
+            <img class="f_logo" src="../static/images/logo.jpg" />
+          </div>
+          <div class="mid">
+            <p>
+              Your ultimate destination for expert music reviews and
+              recommendations.
+            </p>
+          </div>
+          <div class="rt">
+            <div class="abt_links">
+              <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+              <a href="home.html">Home</a>
+            </div>
+          </div>
+        </div>
+    
+        <hr
+          style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+        />
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="https://www.pinterest.com/pin/240590805064809827/">
+            <img
+              src="../static/images/insta-removebg-preview (copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+          >
+            <img
+              src="../static/images/insta-removebg-preview (3rd copy).png"
+              style="width: 50px"
+              class="grid_im"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+          >
+            <img
+              src="../static/images/insta-removebg-preview.png"
+              style="width: 50px"
+              class="grid_im"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+            ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+          /></a>
+        </div>
+        <div class="copyright">© Cheeta. All rights reserved.</div>
+    </footer>
+</div>
+<script src="../static/navbar.js"></script>
+</body>
+</html>

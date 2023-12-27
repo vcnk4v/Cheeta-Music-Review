@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artists</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/navbarr.css">
+    <style>
+     
+      .logo {
+      padding: 5px 5px;
+      height: 180px;
+      width: 250px;
+      margin-top: 20px;
+      border-radius: 8%;
+      position: absolute; 
+      top: 40%;
+      right: 79%;
+      transform: translate(-60%, -50%);
+    }
+      .main_head {
+        font-size: 110px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 221, 228);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .card {
+        position: relative;
+        text-align: center;
+      }
+      body {
+        width: 1920px;
+        height: 1080px;
+        display: grid;
+        background-color: #120707;
+        min-height: 100vh;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1em;
+        font-family: Arial;
+      }
+
+      .content {
+        margin: 0 auto;
+        padding-left: 10%;
+      }
+
+      .grid {
+        position: relative;
+        margin: 0px;
+      }
+
+      /* Common style */
+      .grid figure {
+        border-radius: 8%;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        min-width: 320px;
+        max-width: 360px;
+        max-height: 360px;
+        width: 50%;
+        background: #310a0c;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .grid figure img {
+        border-radius: 4%;
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+      }
+
+      .grid figure figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+      }
+
+      .grid figure figcaption,
+      .grid figure figcaption > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .grid figure figcaption > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+
+      .grid figure h2 {
+        word-spacing: -0.15em;
+        font-weight: 300;
+      }
+
+      .grid figure h2 span {
+        font-weight: 800;
+      }
+
+      .grid figure h2,
+      .grid figure p {
+        margin: 0;
+      }
+
+      .grid figure p {
+        letter-spacing: 1px;
+        font-size: 68.5%;
+      }
+      figure.effect-ming {
+        background: #170305;
+      }
+
+      figure.effect-ming img {
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+      }
+
+      figure.effect-ming figcaption::before {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+        content: "";
+        opacity: 0;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale3d(1.4, 1.4, 1);
+        transform: scale3d(1.4, 1.4, 1);
+      }
+
+      figure.effect-ming h2 {
+        transition: transform 0.35s;
+        margin: 20% 0 10px 0;
+        -webkit-transition: -webkit-transform 0.35s;
+      }
+
+      figure.effect-ming p {
+        padding: 1em;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+
+      figure.effect-ming:hover h2 {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+      figure.effect-ming:hover figcaption::before,
+      figure.effect-ming:hover p {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+
+      figure.effect-ming:hover img {
+        opacity: 0.4;
+      }
+      .artistimg {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+      }
+      .container {
+
+      padding: 18px;
+      margin-top: 35px;
+      color: antiquewhite;
+      font-size: large;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="home.html"> <i class="fa fa-fw fa-home"></i> Home</a>
+      </a>
+      <a class="current" href="final_artists.html">Artists</a>
+      <a href="about2.html">About</a>
+      <a href="search.html">Search</a>
+    <a href="spotlight.html">Artist Spotlight</a>
+    <a href="{{ url_for('playlist') }}">Playlist</a>
+    </div>
+    <div class="container">
+    <div class="card">
+      <img
+        src="../static/images/wood.jpg"
+        style="width: 100%; height: 230px; filter: brightness(0.5)"
+      />
+      <div class="main_head">ARTISTS</div>
+      <div style="float: left;">
+        <img class="logo" src="../static/images/logo.jpg">
+      </div>
+      
+    </div>
+    <hr style="color: #bd9267;width: 75%;">
+    <div class="content">
+      
+      <div class="grid">
+        <figure class="effect-ming">
+          <img
+            src="../static/images/taylor.png"
+            class="artistimg"
+          />
+          <figcaption>
+            <h2>Taylor <span>Swift</span></h2>
+            <p>Taylor's Top 5 Albums</p>
+            <a href="albums_ts.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="content">
+      <div class="grid">
+        <figure class="effect-ming">
+          <img src="../static/images/lanadel.jpeg" class="artistimg" />
+          <figcaption>
+            <h2>Lana <span>Del Rey</span></h2>
+            <p>Lana's Top 5 Albums</p>
+            <a href="albums_ldr.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="content">
+      <div class="grid">
+        <figure class="effect-ming">
+          <img
+            src="https://i1.sndcdn.com/avatars-SxyaDLEJbJwgiIbM-BXEYlQ-t500x500.jpg"
+            class="artistimg"
+          />
+          <figcaption>
+            <h2>Post <span>Malone</span></h2>
+            <p>Post Malone's Top 5 Albums</p>
+            <a href="albums_pm.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="grid">
+        <figure class="effect-ming">
+          <img
+            src="../static/images/aria.jpeg"
+            class="artistimg"
+          />
+          <figcaption>
+            <h2>Ariana<span>Grande</span></h2>
+            <p>Ariana Grande's Top 5 Albums</p>
+            <a href="albums_ag.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="content">
+      <div class="grid">
+        <figure class="effect-ming">
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e"
+            class="artistimg"
+          />
+          <figcaption>
+            <h2>Imagine <span>Dragons</span></h2>
+            <p>Imagine Dragon's Top 5 Albums</p>
+            <a href="albums_id.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    <div class="content">
+      <div class="grid">
+        <figure class="effect-ming">
+          <img
+            src="../static/images/rihanna.jpeg"
+            class="artistimg"
+          />
+          <figcaption>
+            <h2><span>Rihanna</span></h2>
+            <p>Rihanna's Top 5 Albums</p>
+            <a href="albums_r.html">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
+  </div>
+  <hr style="color: #bd9267;width: 75%;margin-bottom: 4%;margin-top: 2%;">
+  <footer class="foot">
+    <div class="f_split">
+      <div class="lft">
+        <img class="f_logo" src="../static/images/logo.jpg" />
+      </div>
+      <div class="mid">
+        <p>
+          Your ultimate destination for expert music reviews and
+          recommendations.
+        </p>
+      </div>
+      <div class="rt">
+        <div class="abt_links">
+          <a href="about2.html">About&nbsp;&nbsp;&nbsp;|</a>
+          <a href="home.html">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <hr
+      style="color: rgba(247, 241, 241, 0.814); width: 85%; margin-bottom: 1%"
+    />
+    <p>Follow us</p>
+    <div class="socials">
+      <a href="https://www.pinterest.com/pin/240590805064809827/">
+        <img
+          src="../static/images/insta-removebg-preview (copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+      >
+        <img
+          src="../static/images/insta-removebg-preview (3rd copy).png"
+          style="width: 50px"
+          class="grid_im"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/reel/CoruK8uA1g5/?igshid=YmMyMTA2M2Y="
+      >
+        <img
+          src="../static/images/insta-removebg-preview.png"
+          style="width: 50px"
+          class="grid_im"
+      /></a>
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+        ><img src="../static/images/yt.png" style="width: 50px" class="grid_im"
+      /></a>
+    </div>
+    <div class="copyright">© Cheeta. All rights reserved.</div>
+  </footer>
+  <script src="../static/navbar.js"></script>
+  </body>
+</html>
